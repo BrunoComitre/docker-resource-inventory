@@ -172,17 +172,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-### VSCODE ###
-
-.vscode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-.DS_Store
-
 # Local History for Visual Studio Code
 .history/
 
@@ -200,3 +189,14 @@ ipython_config.py
 
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
+
+### VSCODE ###
+
+# .vscode
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# *.code-workspace
+# .DS_Store
