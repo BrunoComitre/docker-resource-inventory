@@ -8,12 +8,14 @@ Link Udemy: [Docker do Zero à Maestria - Contêinerização Desmistificada (PT-
 
 ```
 Command:
-    docker run -it centos /bin/bash
+    docker run -it <DOCKER HUB IMAGE> /bin/bash
 Where:
     - docker run : Command to execute the container
     - -it : To allow iteration with the project
     - centos : The image to be created
     - /bin/bash : Initializes a container with a process in the terminal
+Example:
+    docker run -it centos /bin/bash
 ```
 
 ```
@@ -48,6 +50,49 @@ Example:
     docker attach  37f1c4d71551
 ```
 
+```
+Command:
+    CTRL + P + Q
+Where:
+    CTRL + P + Q : Exits the container iterative without closing, as the exit command does closing the container
+```
+
+```
+Command:
+    docker pull <DOCKER HUB IMAGE>
+Where:
+    docker pull : Will download the latest version images (latest)    
+Example:
+    docker pull fedora
+```
+
+```
+Command:
+    docker pull -a <DOCKER HUB IMAGE>
+Where:
+    -a : Will download all images from the existing version on the docker hub
+Example:
+    docker pull -a fedora
+```
+
+```
+Command:
+    docker images
+Where:
+    images : List all installed docker images
+Example:
+    docker images
+```
+
+```
+Command:
+    docker images <NAME IMAGE>
+Where:
+    images : List installed docker images by name
+Example:
+    docker images fedora
+```
+c
 ***
 
 # References
