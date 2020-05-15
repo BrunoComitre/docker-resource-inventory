@@ -22,7 +22,7 @@ Example:
 Command:
     docker ps
 Where:
-    - docker ps : Lists all running containers
+    - ps : Lists all running containers
 ```
 
 ```
@@ -169,13 +169,110 @@ Example:
 
 ```
 Command:
-    docker logs <CONTAINER ID> or <NAME CONTAINER>
+    docker logs <CONTAINER ID> or <CONTAINER NAME>
 Where:
     - logs : Access the container and access the logs
     - <CONTAINER ID> : Get the id of a container already created
     - <NAME CONTAINER> : Create a name for the container
 Example:
     docker logs foo-bar
+```
+
+```
+Command:
+    docker stop <CONTAINER ID> or <CONTAINER NAME>
+Where:
+    - stop : Stop the running container
+    - <CONTAINER ID> : Get the id of a container already created
+    - <CONTAINER NAME> : Create a name for the container
+Example:
+    docker stop 81a8864cfa10 or foo-bar
+```
+
+```
+Command:
+    docker start <CONTAINER ID> or <CONTAINER NAME>
+Where:
+    - start : Start the running container
+    - <CONTAINER ID> : Get the id of a container already created
+    - <CONTAINER NAME> : Create a name for the container
+Example:
+    docker start 81a8864cfa10 or foo-bar
+```
+
+```
+Command:
+    docker restart <CONTAINER ID> or <CONTAINER NAME>
+Where:
+    - restart : Restart the running container
+    - <CONTAINER ID> : Get the id of a container already created
+    - <CONTAINER NAME> : Create a name for the container
+Example:
+    docker restart 81a8864cfa10 or foo-bar
+```
+
+```
+Command:
+    docker ps -l
+Where:
+    - ps : Lists all running containers
+    - -l : Specifies the last container that was executed
+```
+
+```
+Command:
+    docker rm <CONTAINER ID> or <CONTAINER NAME>
+Where:
+    - rm : Removes the container from the system
+    - <CONTAINER ID> : Get the id of a container already created
+    - <CONTAINER NAME> : Create a name for the container
+Example:
+    docker rm 5161f20c401f or foo-bar
+```
+
+```
+Command:
+    docker rm <CONTAINER ID> or <CONTAINER NAME> -f
+Where:
+    - rm : Removes the container from the system
+    - <CONTAINER ID> : Get the id of a container already created
+    - <CONTAINER NAME> : Create a name for the container
+    - -f : If the container is running this flag forces it to stop to be removed
+Example:
+    docker rm 5161f20c401f or foo-bar -f
+```
+
+```
+Command:
+    alias dps="docker ps"
+Where:
+    - dps : Instead of typing for example docker ps, this command makes you create a tag like example dps to make typing a command easier
+    - alias dps: Tag to be defined
+    - "docker ps" : Command to be used by the tag
+```
+
+```
+Command:
+    docker inspect <CONTAINER ID> | grep Pid
+Where:
+    - inspect : Inspect the container settings
+    - <CONTAINER ID> : Get the id of a container already created
+    - | grep Pid : Returns the PID of the container host process
+Example:
+    docker inspect 85ef4acf7081 | grep Pid
+```
+
+```
+Command:
+    docker exec -it <CONTAINER ID> /bin/bash
+Where:
+    - exec : Will run in the default directory of the 
+    container.
+    - -it : To allow iteration with the project
+    - <CONTAINER ID> : Get the id of a container already created
+    - /bin/bash : Initializes a container with a process in the terminal
+Example:
+    docker exec -it 85ef4acf7081 /bin/bash
 ```
 
 ***
@@ -190,5 +287,6 @@ Example:
 - [dockerd](https://docs.docker.com/engine/reference/commandline/dockerd/)
 - [Configure and troubleshoot the Docker daemon](https://docs.docker.com/config/daemon/)
 - [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)
+- [A minimal Ubuntu base image modified for Docker-friendliness](https://github.com/phusion/baseimage-docker)
 
 ***
