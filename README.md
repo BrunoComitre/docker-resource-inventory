@@ -396,5 +396,7 @@ Example:
 - [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)
 - [A minimal Ubuntu base image modified for Docker-friendliness](https://github.com/phusion/baseimage-docker)
 - [Docker Tag](https://docs.docker.com/engine/reference/commandline/tag/)
+- [Announcing Docker Enterprise Edition](https://www.docker.com/blog/docker-enterprise-edition/)
+- [Docker Enterprise](https://www.mirantis.com/software/docker/docker-enterprise/)
 
 ***
