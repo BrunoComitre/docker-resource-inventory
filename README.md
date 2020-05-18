@@ -300,6 +300,47 @@ Example:
     docker run helloworld:0.1
 ```
 
+```
+Command:
+    docker tag <IMAGE NAME> <USER>/<TAG NAME>
+Where:
+    - tag : Create a name on an image in the docker.
+    - <IMAGE NAME> : Name created through the docker build.
+    - <USER> : Your username on the DockerHub.
+    - <TAG NAME> : Name of the tag to be inserted in the image along with the version.
+Example:
+    docker tag helloworld:0.1 thecomitre/helloworld:1.0
+```
+
+```
+Command:
+    docker login docker.io
+Where:
+    - login : Login into your dockerhub account
+```
+
+```
+Command:
+    docker push <IMAGE NAME>
+Where:
+    - push : Send the created image to the dockerhub repository.
+    - <IMAGE NAME> : Name created through the docker build.
+Example:
+    docker push thecomitre/helloworld
+```
+
+```
+Command:
+    docker pull <USER>/<IMAGE NAME>:<TAG NAME>
+Where:
+    - pull : Download existing image dockerhub.
+    - <USER> : Your username on the DockerHub.
+    - <IMAGE NAME> : Name created through the docker build.
+    - <TAG NAME> : Name of the tag to be inserted in the image along with the version.
+Example:
+    docker pull thecomitre/helloworld:1.0
+```
+
 ***
 
 ## Dockerfile
