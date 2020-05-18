@@ -6,6 +6,8 @@ Link Udemy: [Docker do Zero à Maestria - Contêinerização Desmistificada (PT-
 
 # Commands
 
+## Terminal
+
 ```
 Command:
     docker run -it <DOCKER HUB IMAGE> /bin/bash
@@ -275,6 +277,70 @@ Example:
     docker exec -it 85ef4acf7081 /bin/bash
 ```
 
+```
+Command:
+    docker build -t <CREATE NAME IMAGE> : <VERSION> .
+Where:
+    - build : Comando para construir o container
+    - -t : Tag an image. This will build like the previous example, but it will then tag the resulting image. The repository name will be <CREATE NAME IMAGE and the tag will be <VERSION>.
+    - <CREATE NAME IMAGE>: Definir o nome do conteiner
+    - <VERSION> : Define o número da versão criada
+    - . : Contexto. Onde o arquivo está especificado
+Example:
+    docker build -t helloworld:0.1 .
+```
+
+```
+Command:
+    docker run <IMAGE NAME>
+Where:
+    - run : Run the container using the created name.
+    - <IMAGE NAME> : Name created through the docker build.
+Example:
+    docker run helloworld:0.1
+```
+
+***
+
+## Dockerfile
+
+```
+Command:
+    FROM <DOCKER IMAGE>
+Where:
+    - FROM : Tell which images you are basing on
+Example:
+    FROM ubuntu:20.10
+```
+
+```
+Command:
+    RUN <COMMAND>
+Where:
+    - RUN : Executes commands when the container is being assembled. Used to install programming languages ​​or programs.
+Note:
+    - Each RUN instruction creates a new layer
+Example:
+    RUN apt-get update
+```
+
+```
+Command:
+    CMD <COMMAND OR COMMANDS>
+Where:
+    - CMD : Executes a command as if we were in shell mode (terminal)
+Note:
+    - The CMD instruction has three forms:
+        - CMD ["executable","param1","param2"] (exec form, this is the preferred form)
+        - CMD ["param1","param2"] (as default parameters to ENTRYPOINT)
+        - CMD command param1 param2 (shell form)
+    - There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
+    - The main purpose of a CMD is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.
+    - If CMD is used to provide default arguments for the ENTRYPOINT instruction, both the CMD and ENTRYPOINT instructions should be specified with the JSON array format.
+Example:
+    CMD ["echo", "Hello World"]
+```
+
 ***
 
 # References
@@ -288,5 +354,6 @@ Example:
 - [Configure and troubleshoot the Docker daemon](https://docs.docker.com/config/daemon/)
 - [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)
 - [A minimal Ubuntu base image modified for Docker-friendliness](https://github.com/phusion/baseimage-docker)
+- [Docker Tag](https://docs.docker.com/engine/reference/commandline/tag/)
 
 ***
