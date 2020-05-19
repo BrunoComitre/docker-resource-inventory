@@ -341,6 +341,28 @@ Example:
     docker pull thecomitre/helloworld:1.0
 ```
 
+```
+Command:
+    docker search <IMAGE NAME>
+Where:
+    - search : Search the name related to the search with images of the dockerhub.
+    - <IMAGE NAME> : Name created through the docker build.
+Example:
+    docker search ubuntu
+```
+
+```
+Command:
+    docker tag <DOCKER USER>/<DOCKER IMAGE> <HOST>:<NAME TAG>
+Where:
+    - <DOCKER USER> : Name of the user who owns the image on the dockerhub.
+    - <DOCKER IMAGE> : Image name.
+    - <HOST> : Specifies the name. Image host.
+    - <IMAGE NAME> : Defined tag name.
+Example:
+    docker tag docker.io/nginx localhost:5000/mynginx
+```
+
 ***
 
 ## Dockerfile
@@ -398,5 +420,6 @@ Example:
 - [Docker Tag](https://docs.docker.com/engine/reference/commandline/tag/)
 - [Announcing Docker Enterprise Edition](https://www.docker.com/blog/docker-enterprise-edition/)
 - [Docker Enterprise](https://www.mirantis.com/software/docker/docker-enterprise/)
+- [Compartilhamento do sistema de arquivos (osxfs)](https://docs.docker.com/docker-for-mac/osxfs/#namespaces) 
 
 ***
