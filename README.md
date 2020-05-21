@@ -363,6 +363,18 @@ Example:
     docker tag docker.io/nginx localhost:5000/mynginx
 ```
 
+```
+Command:
+    docker run -d -p <PORT>:<PORT> <IMAGE NAME>
+Where:
+    - -d : Detached.
+    - -p : Specifies the access and communication port.
+    - <PORT> : Specifies the name. Image host.
+    - <IMAGE NAME> :Image name.
+Example:
+    docker run -d -p 80:80 webserver
+```
+
 ***
 
 ## Dockerfile
@@ -404,6 +416,14 @@ Example:
     CMD ["echo", "Hello World"]
 ```
 
+```
+Command:
+    RUN apt-get clean
+Where:
+    - FROM : Executes commands when the container is being assembled. Used to install programming languages ​​or programs.
+    - apt-get clean : On Ubuntu it clears or stores the cache stored in the creation of the container.
+```
+
 ***
 
 # References
@@ -422,5 +442,6 @@ Example:
 - [Docker Enterprise](https://www.mirantis.com/software/docker/docker-enterprise/)
 - [Compartilhamento do sistema de arquivos (osxfs)](https://docs.docker.com/docker-for-mac/osxfs/#namespaces) 
 - [Docker Community](https://www.docker.com/docker-community)
+- [Docker GitHub](https://github.com/docker)
 
 ***
