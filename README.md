@@ -421,5 +421,6 @@ Example:
 - [Announcing Docker Enterprise Edition](https://www.docker.com/blog/docker-enterprise-edition/)
 - [Docker Enterprise](https://www.mirantis.com/software/docker/docker-enterprise/)
 - [Compartilhamento do sistema de arquivos (osxfs)](https://docs.docker.com/docker-for-mac/osxfs/#namespaces) 
+- [Docker Community](https://www.docker.com/docker-community)
 
 ***
