@@ -6,6 +6,40 @@ Link Udemy: [Docker do Zero à Maestria - Contêinerização Desmistificada (PT-
 
 # Commands
 
+## Notes
+
+### CMD
+Run at run time only (Runtime)
+
+- Run command on containers during startup
+- Equivalent to:
+  - <arguments> <command>
+  - docker run <arguments> / bin / bash
+- One CMD by Dockerfile
+
+**Shell Form**
+- Commands are expressed in the same way as shell commands
+- The commands are appended with:
+  - "/ bin / bash -c"
+- Expansion of variables
+
+**Exec Form**
+
+- JSON array style: ["command", "arg1"]
+- Containers do not need shell
+- Ensures that the String is not overwritten by the Shell
+- No Shell features:
+  - No variable expansion
+  - No special characters (&&, ||, <>, ...)
+
+### RUN
+Time instruction Buildtime (Compilation)
+
+- Compile and layer images
+- Used to install applications
+
+***
+
 ## Terminal
 
 ```
