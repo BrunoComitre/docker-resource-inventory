@@ -420,8 +420,16 @@ Example:
 Command:
     RUN apt-get clean
 Where:
-    - FROM : Executes commands when the container is being assembled. Used to install programming languages ​​or programs.
+    - RUN : Executes commands when the container is being assembled. Used to install programming languages ​​or programs.
     - apt-get clean : On Ubuntu it clears or stores the cache stored in the creation of the container.
+```
+
+```
+Command:
+    RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+Where:
+    - RUN : Executes commands when the container is being assembled. Used to install programming languages ​​or programs.
+    - rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* : Delete temporary files on Ubuntu.
 ```
 
 ***
