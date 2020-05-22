@@ -57,7 +57,7 @@ Command:
 Where:
     - docker run : Command to execute the container
     - -it : To allow iteration with the project
-    - centos : The image to be created
+    - <DOCKER HUB IMAGE> : The image to be created
     - /bin/bash : Initializes a container with a process in the terminal
 Example:
     docker run -it centos /bin/bash
@@ -430,7 +430,67 @@ Example:
     docker run -d -p 80:80 webserver
 ```
 
-***
+```
+Command:
+    docker run -it -v <NAME VOLUME> --name=<CONTAINER NAME> <DOCKER HUB IMAGE> /bin/bash
+Where:
+    - docker run : Command to execute the container
+    - -it : To allow iteration with the project
+    - -v : To create docker volume
+    - --name= : Specify container name.
+    - <CONTAINER NAME> : Name of container to be created.
+    - <DOCKER HUB IMAGE> : The image to be created
+    - /bin/bash : Initializes a container with a process in the terminal
+Example:
+    docker run -it -v /foo-bar --name=vols centos /bin/bash
+```
+
+```
+Command:
+    docker run -it --volumes-from <NAME VOLUME> --name=<CONTAINER NAME> <DOCKER HUB IMAGE> /bin/bash
+Where:
+    - docker run : Command to execute the container
+    - -it : To allow iteration with the project
+    - --volumes-from: Uses the volume through an existing image.
+    - <CONTAINER NAME> : Name of container existing.
+    - <DOCKER HUB IMAGE> : The image to be created
+    - /bin/bash : Initializes a container with a process in the terminal
+Example:
+    docker run -it --volumes-from=vols centos /bin/bash
+```
+
+```
+Command:
+    docker volume ls
+Where:
+    - volume : Displays information about the volume command.
+    - ls : Lists volumes.
+```
+
+```
+Command:
+    docker rm -v <CONTAINER ID>
+Where:
+    - volume : Displays information about the volume command.
+    - rm : Lists volumes.
+    - -v : Specific volume..
+    - <CONTAINER ID> : Id number with container.
+Example:
+    docker rm -v a82ac60022d0 
+```
+
+```
+Command:
+    docker volume rm <VOLUME NAME>
+Where:
+    - volume : Displays information about the volume command.
+    - rm : Remove volume.
+    - <VOLUME NAME> : Volume name caught.
+Example:
+    docker volume rm 295497c263df424be438070e754e76d36efb65213a041dbc1f1aba26ab63c971 
+```
+
+***  
 
 ## Dockerfile
 
