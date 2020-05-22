@@ -225,6 +225,18 @@ Example:
 
 ```
 Command:
+    docker logs -f <CONTAINER ID> or <CONTAINER NAME>
+Where:
+    - logs : Access the container and access the logs
+    - -f : It works as a detail, where it displays the logs in real time.
+    - <CONTAINER ID> : Get the id of a container already created
+    - <NAME CONTAINER> : Create a name for the container
+Example:
+    docker logs -f e66fc5a02947
+```
+
+```
+Command:
     docker stop <CONTAINER ID> or <CONTAINER NAME>
 Where:
     - stop : Stop the running container
