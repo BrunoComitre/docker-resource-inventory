@@ -38,6 +38,15 @@ Time instruction Buildtime (Compilation)
 - Compile and layer images
 - Used to install applications
 
+### ENTRYPOINT
+It cannot be overwritten at run time by normal command:
+    - example: docker run <arguments> <command>
+
+Any runtime command can be used as an argument in ENTRYPONT:
+    - example: docker run <arguments> <command>
+
+Expansion of variables.
+
 ***
 
 ## Terminal
@@ -485,5 +494,6 @@ Where:
 - [Compartilhamento do sistema de arquivos (osxfs)](https://docs.docker.com/docker-for-mac/osxfs/#namespaces) 
 - [Docker Community](https://www.docker.com/docker-community)
 - [Docker GitHub](https://github.com/docker)
+- [Docker RUN vs CMD vs ENTRYPOINT](https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/)
 
 ***
