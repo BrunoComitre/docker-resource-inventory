@@ -61,6 +61,14 @@ There is no docker0 bridge on Windows
 Because of the way networking is implemented in Docker Desktop for Windows, you cannot see a docker0 interface on the host.
 This interface is actually within the virtual machine.
 
+</br>
+
+### LOG LEVELS
+- debug: Logs messages from debug, info, warn, error and fatal.
+- info: Logs messages from info, warn, error and fatal.
+- warn: Logs messages from warn, error and fatal.
+- error: Logs messages from error and fatal.
+- fatal: Error messages only fatal.
 
 ***
 
@@ -212,8 +220,8 @@ Example:
 Command:
     docker run memory=1g <NAME IMAGE>
 Where:
-    - command : Specifies how much ram to consume in the image
-    - <NAME IMAGE> : Container name
+    - command : Specifies how much ram to consume in the image.
+    - <NAME IMAGE> : Container name.
 Example:
     docker run memory=1g foo-bar
 ```
@@ -222,9 +230,9 @@ Example:
 Command:
     docker inspect <CONTAINER ID> or <NAME CONTAINER>
 Where:
-    - inspect : Inspect the container settings
-    - <CONTAINER ID> : Get the id of a container already created
-    - <NAME CONTAINER> : Create a name for the container
+    - inspect : Inspect the container settings.
+    - <CONTAINER ID> : Get the id of a container already created.
+    - <NAME CONTAINER> : Create a name for the container.
 Example:
     docker inspect 39c53628c639 or foo-bar
 ```
@@ -250,6 +258,19 @@ Where:
     - <NAME CONTAINER> : Create a name for the container
 Example:
     docker logs -f e66fc5a02947
+```
+
+```
+Command:
+    docker exec -it <CONTAINER ID> bash
+Where:
+  - exec : Will run in the default directory of the 
+    container.
+    - -it : To allow iteration with the project.
+    - <CONTAINER ID> : Get the id of a container already created
+    - bash : Depending on the container, it is possible to run a terminal inside the container to check logs.
+Example:
+    docker exec -it e66fc5a02947 bash
 ```
 
 ```
@@ -553,6 +574,93 @@ Example:
     docker run --name=receiver --link=source:src-alias -it ubuntu:20:10 /bin/bash
 ```
 
+```
+Command:
+    docker service stop
+Where:
+    - service : Refers to the running docker.
+    - stop : Stop service.
+```
+
+```
+Command:
+    docker service start
+Where:
+    - service : Refers to the running docker.
+    - start : Star service.
+```
+
+```
+Command:
+    dockerd --debug &
+Where:
+    - service : After stopping the docker service, this command is used to start the docker in debug mode.
+    - & : In order to keep the terminal running.
+```
+
+```
+Command:
+    dockerd -l <LOG LEVEL> &
+Where:
+    - dockerd --debug : After stopping the docker service, this command is used to start the docker in debug mode.
+    - -l : It means level.
+    - <LOG LEVEL> : Level debug, info, warn, error or fatal.
+    - & : In order to keep the terminal running.
+Example:
+    dockerd -l info &
+```
+
+```
+Command:
+    docker network inspect bridge
+Where:
+    - network : Specific network docker commands.
+    - inspect : Inspect the container settings.
+    - bridge : Docker0 bridge network details.
+```
+
+```
+Command:
+    docker system prune
+Where:
+    - system prune : Removes all images, interfaces, stopped containers, from the computer.
+```
+
+```
+Command:
+    docker system prune -a
+Where:
+    - -a : Removes all images, interfaces, stopped containers, volume, cache, network from the computer.
+```
+
+```
+Command:
+    docker images -a
+Where:
+    - images -a -q : Lists all image id's.
+```
+
+```
+Command:
+    docker images -a -q
+Where:
+    - images -a -q : Lists all containers id's.
+```
+
+```
+Command:
+    docker rmi $(docker images -a -q)
+Where:
+    - rmi $ : Removes all images not linked to containers.
+```
+
+```
+Command:
+    docker rmi $(docker images -a -q) -f
+Where:
+    - -f : Forcing running containers to stop being removed too.
+```
+
 ***  
 
 </br>
@@ -635,5 +743,11 @@ Where:
 - [Docker GitHub](https://github.com/docker)
 - [Docker RUN vs CMD vs ENTRYPOINT](https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/)
 - [Networking features in Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/networking/)
+- [Docker Images](https://docs.docker.com/engine/reference/commandline/images/)
+- [Configure and troubleshoot the Docker daemon](https://docs.docker.com/config/daemon/)
+- [Use the Docker command line](https://docs.docker.com/engine/reference/commandline/cli/)
+- [Use bridge networks](https://docs.docker.com/network/bridge/)
+- [Overview Network](https://docs.docker.com/network/)
+- [Container networking](https://docs.docker.com/config/containers/container-networking/)
 
 ***
