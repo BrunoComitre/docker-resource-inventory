@@ -4,6 +4,8 @@ Link Udemy: [Docker do Zero à Maestria - Contêinerização Desmistificada (PT-
 
 ***
 
+</br>
+
 # Commands
 
 ## Notes
@@ -32,11 +34,15 @@ Run at run time only (Runtime)
   - No variable expansion
   - No special characters (&&, ||, <>, ...)
 
+</br>
+
 ### RUN
 Time instruction Buildtime (Compilation)
 
 - Compile and layer images
 - Used to install applications
+
+</br>
 
 ### ENTRYPOINT
 It cannot be overwritten at run time by normal command:
@@ -47,7 +53,18 @@ Any runtime command can be used as an argument in ENTRYPONT:
 
 Expansion of variables.
 
+</br>
+
+### DOCKER0 BRIDGE
+There is no docker0 bridge on Windows
+
+Because of the way networking is implemented in Docker Desktop for Windows, you cannot see a docker0 interface on the host.
+This interface is actually within the virtual machine.
+
+
 ***
+
+</br>
 
 ## Terminal
 
@@ -449,14 +466,27 @@ Example:
 Command:
     docker run -it --volumes-from <NAME VOLUME> --name=<CONTAINER NAME> <DOCKER HUB IMAGE> /bin/bash
 Where:
-    - docker run : Command to execute the container
-    - -it : To allow iteration with the project
+    - docker run : Command to execute the container.
+    - -it : To allow iteration with the project.
     - --volumes-from: Uses the volume through an existing image.
     - <CONTAINER NAME> : Name of container existing.
-    - <DOCKER HUB IMAGE> : The image to be created
+    - <DOCKER HUB IMAGE> : The image to be created.
     - /bin/bash : Initializes a container with a process in the terminal
 Example:
     docker run -it --volumes-from=vols centos /bin/bash
+```
+
+```
+Command:
+    docker run -it --dns=<DNS IP> --name=<CONTAINER NAME> <DOCKER IMAGE> 
+Where:
+    - docker run : Command to execute the container
+    - --dns= : Dns ip to be used.
+    - --name= : Specify container name.
+    - <CONTAINER NAME> : Name of container to be created.
+    - <DOCKER  IMAGE> : The image to be created.
+Example:
+    docker run --dns=8.8.4.4 --name=dnstest my-net
 ```
 
 ```
@@ -490,7 +520,42 @@ Example:
     docker volume rm 295497c263df424be438070e754e76d36efb65213a041dbc1f1aba26ab63c971 
 ```
 
+```
+Command:
+    docker run -d -P --name=<CONTAINER NAME> <DOCKER IMAGE>
+Where:
+    - docker run : Command to execute the container
+    - -d : Detash mode, run the container in the background
+    - -P : Publish all exposed ports to random ports.
+    - --name= : Specify container name.
+    - <CONTAINER NAME> : Name of container to be created.
+    - <DOCKER HUB IMAGE> : The image to be created.
+Example:
+    docker run -d -P --name==too-many-ports too-many-ports
+```
+
+```
+Command:
+    docker run --name=<CONTAINER NAME> --link=<CONTAINER NAME>:src-alias -it <DOCKER IMAGE>:<TAG> /bin/bash
+Where:
+    - docker run : Command to execute the container
+    - -d : Detash mode, run the container in the background
+    - -P : Publish all exposed ports to random ports.
+    - --name= : Specify container name.
+    - <CONTAINER NAME> : Name of container to be created.
+    - --link= = Name of the container to be used as a source to be linked.
+    - src-alias = Defines an alias. A command across multiple command line interpreters.
+    - -it : To allow iteration with the project
+    - <DOCKER IMAGE> : Image name.
+    - <TAG> : Specifies the image version.
+    - /bin/bash : Initializes a container with a process in the terminal
+Example:
+    docker run --name=receiver --link=source:src-alias -it ubuntu:20:10 /bin/bash
+```
+
 ***  
+
+</br>
 
 ## Dockerfile
 
@@ -549,6 +614,8 @@ Where:
 
 ***
 
+</br>
+
 # References
 
 - [Docker](https://www.docker.com/)
@@ -567,5 +634,6 @@ Where:
 - [Docker Community](https://www.docker.com/docker-community)
 - [Docker GitHub](https://github.com/docker)
 - [Docker RUN vs CMD vs ENTRYPOINT](https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/)
+- [Networking features in Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/networking/)
 
 ***
