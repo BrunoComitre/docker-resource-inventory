@@ -78,6 +78,23 @@ This interface is actually within the virtual machine.
 
 </br>
 
+### PORTS:
+Meaning:
+  - <"HOST">:<"CONTAINER">
+
+Example:
+  - "3308:3306" 
+
+</br>
+
+### RESTART POLICIES
+- "no" : Never try to restart this container if it stops or locks up.
+- always: If this cointainer stops *for any reason*, always try to restart it.
+- on-failure: Restart only if the container stops with an error code.
+- unless-stopped: Always restart, unless the developer forces the stop.
+
+</br>
+
 ### COURSE
 - Many terminal and dockerfile commands are specified in the folder: Course Docker from Zero to Mastery - Demystified Containerization.
 
