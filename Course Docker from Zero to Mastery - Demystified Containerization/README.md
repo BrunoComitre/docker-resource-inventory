@@ -70,11 +70,30 @@ This interface is actually within the virtual machine.
 - error: Logs messages from error and fatal.
 - fatal: Error messages only fatal.
 
+</br>
+
+### PORTS:
+Meaning:
+  - <"HOST">:<"CONTAINER">
+
+Example:
+  - "3308:3306" 
+
+</br>
+
+### RESTART POLICIES
+- "no" : Never try to restart this container if it stops or locks up.
+- always: If this cointainer stops *for any reason*, always try to restart it.
+- on-failure: Restart only if the container stops with an error code.
+- unless-stopped: Always restart, unless the developer forces the stop.
+
 ***
 
 </br>
 
-## Terminal
+## Commands
+
+### Terminal
 
 ```
 Command:
@@ -188,10 +207,10 @@ Example:
 Command:
     docker run -d <DOCKER HUB IMAGE> /bin/bash
 Where:
-    - docker run : Command to execute the container
-    - -d : Detash mode, run the container in the background
-    - centos : The image to be created
-    - /bin/bash : Initializes a container with a process in the terminal
+    - docker run : Command to execute the container.
+    - -d : Detash mode, run the container in the background.
+    - centos : The image to be created.
+    - /bin/bash : Initializes a container with a process in the terminal.
 Example:
     docker run -d centos /bin/bash
 ```
@@ -200,8 +219,8 @@ Example:
 Command:
     docker top <CONTAINER ID>
 Where:
-    - top : List running processes
-    - <CONTAINER ID> : Get the id of a container already created
+    - top : List running processes.
+    - <CONTAINER ID> : Get the id of a container already created.
 Example:
     docker top 39c53628c639
 ```
@@ -661,11 +680,9 @@ Where:
     - -f : Forcing running containers to stop being removed too.
 ```
 
-***  
-
 </br>
 
-## Dockerfile
+### Dockerfile
 
 ```
 Command:
@@ -720,7 +737,47 @@ Where:
     - rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* : Delete temporary files on Ubuntu.
 ```
 
-***
+</br>
+
+### Docker Compose
+
+```
+Command:
+    docker-compose up
+Where:
+    - up : Container initialization. Builds the first time automatically.
+```
+
+```
+Command:
+    docker-compose build
+Where:
+    - build : To build the container images.
+```
+
+```
+Command:
+    docker-compose down
+Where:
+    - down : Press Ctrl+C, and type the command to stop execution.
+```
+
+```
+Command:
+    docker-compose up -d
+Where:
+    - up : Container initialization. Builds the first time automatically.
+    - -d : Detash mode, run the container in the background.
+```
+
+```
+Command:
+    docker-compose ps
+Where:
+    - ps : Shows the list of running docker-compose.yml containers.
+```
+
+***  
 
 </br>
 
@@ -749,5 +806,8 @@ Where:
 - [Use bridge networks](https://docs.docker.com/network/bridge/)
 - [Overview Network](https://docs.docker.com/network/)
 - [Container networking](https://docs.docker.com/config/containers/container-networking/)
+- [leandrocgsi/DockerFromZeroToMastery](https://github.com/leandrocgsi/DockerFromZeroToMastery)
+- [Install Docker Compose](https://docs.docker.com/compose/install/)
+- [Docker is installed but Docker Compose is not ? why?](https://stackoverflow.com/questions/36685980/docker-is-installed-but-docker-compose-is-not-why)
 
 ***
