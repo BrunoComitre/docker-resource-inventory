@@ -138,5 +138,8 @@ This interface is actually within the virtual machine.
 - [Use bridge networks](https://docs.docker.com/network/bridge/) [EN-US]
 - [Overview Network](https://docs.docker.com/network/) [EN-US]
 - [Container networking](https://docs.docker.com/config/containers/container-networking/) [EN-US]
+- [leandrocgsi/DockerFromZeroToMastery](https://github.com/leandrocgsi/DockerFromZeroToMastery) [PT-BR]
+- [Install Docker Compose](https://docs.docker.com/compose/install/) [EN-US]
+- [Docker is installed but Docker Compose is not ? why?](https://stackoverflow.com/questions/36685980/docker-is-installed-but-docker-compose-is-not-why) [EN-US]
 
 ***
