@@ -87,6 +87,19 @@ Example:
 - on-failure: Restart only if the container stops with an error code.
 - unless-stopped: Always restart, unless the developer forces the stop.
 
+</br>
+
+### ADD X COPY
+
+#### ADD <'src'> <'dest'>
+The **ADD** statement will copy the files from **<'src'>** and add them to the container file system in the path **<'dest>'**.
+  - **ADD** allows **<'src'>** to be a URL;
+  - If the **<'src'>** parameter of **ADD** is a file in a recognized compression format, it will be unzipped in the container file system.
+  
+#### COPY <'src'> <'dest'>
+The **COPY** statement will copy the **<'src'>** files and the container file system into the path **<'dest>'**.
+  - If you do not need to add resources from URLs and/or compressed, always use the ** COPY ** instruction.
+
 ***
 
 </br>
@@ -699,7 +712,7 @@ Command:
 Where:
     - RUN : Executes commands when the container is being assembled. Used to install programming languages ​​or programs.
 Note:
-    - Each RUN instruction creates a new layer
+    - Each RUN instruction creates a new layer.
 Example:
     RUN apt-get update
 ```
@@ -735,6 +748,57 @@ Command:
 Where:
     - RUN : Executes commands when the container is being assembled. Used to install programming languages ​​or programs.
     - rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* : Delete temporary files on Ubuntu.
+```
+
+```
+Command:
+    VOLUME <NAME VOLUME>
+Where:
+    - <NAME VOLUME> : Specifies the name of the volume to be created within the container.
+Example:
+    VOLUME /tmp
+```
+
+```
+Command:
+    ADD <LOCAL> /b <DOCKER DIRECTORY>
+Where:
+    - <LOCAL> : Local path of the machine where the file/s is.
+    - /b : It means blank space.
+    - <DOCKER DIRECTORY> : Place where it will be stored inside the container.
+Example:
+    ADD app/target/docker-from-zero-to-mastery-0.0.1-SNAPSHOT.jar app.jar
+```
+
+```
+Command:
+    EXPOSE <PORT>
+Where:
+    - <PORT> : Port number or ports to be exposed.
+Example:
+    EXPOSE 8080
+```
+
+```
+Command:
+    RUN <COMMAND>
+Where:
+    - <COMMAND> : Command to be executed at creation time.
+Note:
+    - Each RUN instruction creates a new layer
+    - The command is different for each application or tool used.
+Example:
+    RUN bash -c 'touch /app.jar'
+```
+
+```
+Command:
+    ENTRYPOINT <COMMAND> or ["<COMMANDS>", "<COMMANDS>"]
+Where:
+    - ENTRYPOINT : Allows you to configure a container that will run as an executable.
+    - <COMMAND> : One or more commands can be passed.
+Example:
+    ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app.jar"]
 ```
 
 </br>

@@ -95,6 +95,19 @@ Example:
 
 </br>
 
+### ADD X COPY
+
+#### ADD <'src'> <'dest'>
+The **ADD** statement will copy the files from **<'src'>** and add them to the container file system in the path **<'dest>'**.
+  - **ADD** allows **<'src'>** to be a URL;
+  - If the **<'src'>** parameter of **ADD** is a file in a recognized compression format, it will be unzipped in the container file system.
+  
+#### COPY <'src'> <'dest'>
+The **COPY** statement will copy the **<'src'>** files and the container file system into the path **<'dest>'**.
+  - If you do not need to add resources from URLs and/or compressed, always use the ** COPY ** instruction.
+
+</br>
+
 ### COURSE
 - Many terminal and dockerfile commands are specified in the folder: Course Docker from Zero to Mastery - Demystified Containerization.
 
