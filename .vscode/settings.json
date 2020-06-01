@@ -25,11 +25,11 @@
     "workbench.colorTheme": "ƒ - One Dark - Operator Mono/Italic",
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#39c7f4",
-        "activityBar.activeBorder": "#384d54",
+        "activityBar.activeBorder": "#15202b",
         "activityBar.background": "#39c7f4",
         "activityBar.foreground": "#15202b",
         "activityBar.inactiveForeground": "#15202b99",
-        "activityBarBadge.background": "#384d54",
+        "activityBarBadge.background": "#15202b",
         "activityBarBadge.foreground": "#e7e7e7",
         "statusBar.background": "#0db7ed",
         "statusBar.border": "#0db7ed",
