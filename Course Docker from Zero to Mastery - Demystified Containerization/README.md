@@ -873,5 +873,10 @@ Where:
 - [leandrocgsi/DockerFromZeroToMastery](https://github.com/leandrocgsi/DockerFromZeroToMastery)
 - [Install Docker Compose](https://docs.docker.com/compose/install/)
 - [Docker is installed but Docker Compose is not ? why?](https://stackoverflow.com/questions/36685980/docker-is-installed-but-docker-compose-is-not-why)
+- [Travis CI](https://travis-ci.org/)
+- [Code Project](https://www.codeproject.com/)
+- [DZone](https://dzone.com/)
+- [InfoQ](https://www.infoq.com/br/)
+- [Stack Overflow](https://pt.stackoverflow.com/)
 
 ***

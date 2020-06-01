@@ -171,5 +171,10 @@ The **COPY** statement will copy the **<'src'>** files and the container file sy
 - [leandrocgsi/DockerFromZeroToMastery](https://github.com/leandrocgsi/DockerFromZeroToMastery) [PT-BR]
 - [Install Docker Compose](https://docs.docker.com/compose/install/) [EN-US]
 - [Docker is installed but Docker Compose is not ? why?](https://stackoverflow.com/questions/36685980/docker-is-installed-but-docker-compose-is-not-why) [EN-US]
+- [Travis CI](https://travis-ci.org/) [EN-US]
+- [Code Project](https://www.codeproject.com/) [EN-US]
+- [DZone](https://dzone.com/) [EN-US]
+- [InfoQ](https://www.infoq.com/br/) [PT-BR]
+- [Stack Overflow](https://pt.stackoverflow.com/) [PT-BR]
 
 ***
