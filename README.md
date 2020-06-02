@@ -123,7 +123,7 @@ The **COPY** statement will copy the **<'src'>** files and the container file sy
 - [Docker Book](http://stack.desenvolvedor.expert/appendix/docker/comandos.html) [PT-BR]
 - [Docker World](https://www.mundodocker.com.br/) [PT-BR]
 
-### Diversos
+### Several
 - [The best Docker base image for your Python application (April 2020)](https://pythonspeed.com/articles/base-image-python-docker-images/) [EN-US]
 - [Simplified Docker-ing for Data Science — Part 1](https://becominghuman.ai/docker-for-data-science-part-1-dd41e5ef1d80) [EN-US]
 - [jupyter/datascience-notebook](https://hub.docker.com/r/jupyter/datascience-notebook/) [EN-US]
