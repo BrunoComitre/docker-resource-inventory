@@ -1,0 +1,25 @@
+Link do Guia Oficial
+====================
+
+https://docs.docker.com/compose/install/
+
+Link do quick fix para o CentOS
+===============================
+
+https://stackoverflow.com/questions/36685980/docker-is-installed-but-docker-compose-is-not-why
+
+
+Passo a passo no Ubuntu
+=======================
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+Passo a passo no CentOS
+=======================
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
+sudo chmod +x /usr/bin/docker-compose
+
+OBS: Se você já estiver como super usuário pode remover o prefixo sudo
