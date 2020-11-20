@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+    puppetmaster:
+        build:
+            dockerfile: Dockerfile
+            context: .
+        image: puppetmaster
+        container_name: puppetmaster
+        restart: always
+        command: /start.sh && gradlew build -p /data
+        hostname: android-dev
+        devices: ['/dev/kvm']
+        volumes:
+            - $PWD:/data
+        ports: 
+            - "5037:5037"
+            - "5901:5901"
+            - "2222:22"
+            - "5554:5554"
+            - "5555:5555"
+            - "5900:5900"
+            - "6080:6080"
+        tty: true
+
+networks:
+    default:
+        external:
+            name: "network"
