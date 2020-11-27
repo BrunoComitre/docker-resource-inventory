@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+    jenkins:
+        container_name: jenkins
+        build:
+            context: ./
+        volumes:
+            - ./docker/jenkins-data/:/var/jenkins_home
+            - ./docker/jenkins-backup:/var/jenkins_backup
+        restart: always
+        ports:
+            - "8080:8080"
+            - "50000:50000"
