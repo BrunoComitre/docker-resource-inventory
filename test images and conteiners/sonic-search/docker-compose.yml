@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+    sonic:
+        build:
+            dockerfile: Dockerfile
+            context: .
+        image: valeriansaliou/sonic:v1.3.0
+        volumes:
+            - ./conf.cfg:/etc/sonic.cfg
+        ports: 
+            - "1491:1491"
+        tty: true
+
+networks:
+    default:
+        external:
+            name: test-network
