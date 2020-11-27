@@ -6,6 +6,8 @@
 
 Instalação e configuração da ferramenta Jenkins e plugins.
 
+**Nota:** Ao usar o projeto, adicionar a pasta docker em .gitignore
+
 ***
 <br />
 
