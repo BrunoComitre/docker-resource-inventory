@@ -1,6 +1,6 @@
 # Course Docker from Zero to Mastery - Demystified Containerization
 
-Link Udemy: [Docker do Zero à Maestria - Contêinerização Desmistificada (PT-BR)](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/)
+Link Udemy: [Docker from Zero to Mastery - Demystified Containerization (PT-BR)](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/)
 
 ***
 
@@ -859,7 +859,7 @@ Where:
 - [Docker Tag](https://docs.docker.com/engine/reference/commandline/tag/)
 - [Announcing Docker Enterprise Edition](https://www.docker.com/blog/docker-enterprise-edition/)
 - [Docker Enterprise](https://www.mirantis.com/software/docker/docker-enterprise/)
-- [Compartilhamento do sistema de arquivos (osxfs)](https://docs.docker.com/docker-for-mac/osxfs/#namespaces) 
+- [File system sharing (osxfs)](https://docs.docker.com/docker-for-mac/osxfs/#namespaces) 
 - [Docker Community](https://www.docker.com/docker-community)
 - [Docker GitHub](https://github.com/docker)
 - [Docker RUN vs CMD vs ENTRYPOINT](https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/)

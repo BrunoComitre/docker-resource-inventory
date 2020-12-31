@@ -4,11 +4,12 @@
 
 ![version](https://img.shields.io/badge/version-0.0.1-blue.svg?maxAge=2592000)
 
-Instalação e configuração da ferramenta Jenkins e plugins.
+Installation and configuration of the Jenkins tool and plugins.
 
-**Nota:** Ao usar o projeto, adicionar a pasta docker em .gitignore
+**Note:** When using the project, add the docker folder in .gitignore
 
 ***
+
 <br />
 
 ## Quickstart
@@ -20,6 +21,7 @@ To find password:
 ``` $ ➜ 123a4567b89012c34d56efgh789i0jk1  ```
 
 ***
+
 <br />
 
 ## Deploy with Docker
@@ -30,6 +32,7 @@ You must have docker and docker-compose tools installed to work with material in
 The application will be available on localhost 127.0.0.1 in your browser.
 
 ***
+
 <br />
 
 ## Web routes
@@ -39,6 +42,7 @@ All routes are available in ``` /route ```, paths with.
 - [Documentation docs](http://localhost:8080/docs)
 
 ***
+
 <br />
 
 ## Plugins
@@ -47,215 +51,220 @@ All routes are available in ``` /route ```, paths with.
 
 **Email Extension**
 
-Este plugin permite que você configure todos os aspectos das notificações por email. Você pode personalizar quando um e-mail é enviado, quem deve recebê-lo e o que o e-mail diz.
+This plugin allows you to configure all aspects of email notifications. You can customize when an email is sent, who should receive it, and what the email says.
 
-**Link do plug-in:** [email-ext](https://plugins.jenkins.io/email-ext/)
+**Link plug-in:** [email-ext](https://plugins.jenkins.io/email-ext/)
 
 **Tutorial:** [articles-jenkins-email][https://nozaki.me/roller/kyle/entry/articles-jenkins-email)
 
 ***
+
 <br />
 
-**Analisador de resultados de teste**
+**Test Results Analyzer**
 
-O plugin Test Results é preferível por oferecer maior visibilidade dos resultados dos testes e padrões de tendência de execução, além de facilitar a instalação. O 'Testes Result Analyzer' fornece muitas representações gráficas diferentes e uma tabela de matriz bem detalhada que irá direcioná-lo para o resultado de cada teste para todas as compilações que você teve. Um método eficaz de reconhecimento de teste instável.
+The Test Results plugin is preferable because it offers greater visibility of test results and execution trend patterns, in addition to facilitating installation. The 'Result Analyzer Tests' provides many different graphical representations and a very detailed matrix table that will direct you to the result of each test for all the builds you have had. An effective method of unstable test recognition.
 
-**Link do plug-in:** [test-results-analyzer](https://plugins.jenkins.io/test-results-analyzer)
+**Link plug-in:** [test-results-analyzer](https://plugins.jenkins.io/test-results-analyzer)
 
 ***
+
 <br />
 
 **Plugin Pipeline**
 
-'Pipeline' ajuda a simplificar o sistema de entrega contínua usando plug-ins convencionais e projetos freestyle, e executa outras tarefas dinâmicas no Jenkins.
+'Pipeline' helps to simplify the continuous delivery system using conventional plug-ins and freestyle designs, and performs other dynamic tasks in Jenkins.
 
-**Link do plug-in:** [workflow-aggregator](https://plugins.jenkins.io/workflow-aggregator)
+**Link plug-in:** [workflow-aggregator](https://plugins.jenkins.io/workflow-aggregator)
 
 ***
+
 <br />
 
 **Mailer**
 
-Este plugin permite que você configure notificações por email para resultados de construção. Esta é uma quebra do componente de e-mail baseado no núcleo original.
+This plugin allows you to configure email notifications for construction results. This is a breakdown of the email component based on the original core.
 
-**Link do plug-in:** [mailer](https://plugins.jenkins.io/mailer/)
-
-***
-<br />
-
-**Ativar saída do console de cores**
-
-Este é outro ajuste extremamente simples. Colors! Com o plugin AnsiColor , você poderá configurar facilmente diferentes mapas de cores do console. Usar um plugin de cores como este torna a leitura de muitos resultados de depuração do console mais fácil. Você precisará gastar algum tempo em seu registro para garantir que ele produza em cores diferentes com base na gravidade, mas isso é um tipo de coisa “configure uma vez e pronto”. Se você já estiver usando um programa que envia texto colorido para o console, você deve estar pronto para começar a trabalhar com o xtermmapa de cores.
-
-**Link do plug-in:** [ansicolor](https://plugins.jenkins.io/ansicolor/)
+**Link plug-in:** [mailer](https://plugins.jenkins.io/mailer/)
 
 ***
+
 <br />
 
-**Ajuste o tema**
+**Enable color console outputs**
 
-Não sei quanto a você, mas estou cansado de olhar para o velho e monótono tema que acompanha o Jenkins. Felizmente, você pode alterar os temas e trazer as coisas para a era moderna com bastante facilidade com o plugin Simple Theme . Depois de instalado, tudo que você precisa fazer é fornecer um URL para o tema que deseja usar. Pessoalmente, recomendo o [Jenkins Material Theme](http://afonsof.com/jenkins-material-theme/) da afonsof. Este tema é leve, plano e moderno. Se você já usou qualquer outro tema semelhante a material antes, você se sentirá em casa. Aqui está um exemplo de alguns dos ícones:
+This is another extremely simple adjustment. Colors! With the AnsiColor plugin, you can easily configure different color maps of the console. Using a color plugin like this makes reading many debugging results from the console easier. You will need to spend some time on your registration to make sure it produces in different colors based on gravity, but this is a “set it up and done” kind of thing. If you are already using a program that sends color text to the console, you should be ready to start working with the color xtermmap.
 
-**Link do plug-in:** [simple-theme-plugin](https://plugins.jenkins.io/simple-theme-plugin/)
+**Link plug-in:** [ansicolor](https://plugins.jenkins.io/ansicolor/)
+
+***
+
+<br />
+
+**Adjust the theme**
+
+I don't know about you, but I'm tired of looking at the old, monotonous theme that accompanies Jenkins. Fortunately, you can change themes and bring things into the modern era quite easily with the Simple Theme plugin. Once installed, all you have to do is provide a URL for the theme you want to use. Personally, I recommend the [Jenkins Material Theme](http://afonsof.com/jenkins-material-theme/) of afonsof. This theme is light, flat and modern. If you've used any other material-like themes before, you'll feel right at home. Here is an example of some of the icons:
+
+**Link  lug-in:** [simple-theme-plugin](https://plugins.jenkins.io/simple-theme-plugin/)
 
 **Tutorial:** [canon-jenkins](https://github.com/rackerlabs/canon-jenkins)
 
 ***
+
 <br />
 
-**Trabalho DSL**
+**DSL work**
 
-O plugin Jenkins Job DSL permite que os programadores usem Groovy para definir jobs e configurar um conjunto comum de itens para eles. O plug-in então mantém esses scripts e atualiza as informações do trabalho automaticamente. Isso permite que os programadores criem modelos padronizados usando o Domain Specific Language (DSL), o que torna a configuração de novos projetos uma tarefa fácil.
+The Jenkins Job DSL plugin allows programmers to use Groovy to define jobs and configure a common set of items for them. The plug-in then maintains these scripts and updates job information automatically. This allows programmers to create standardized templates using Domain Specific Language (DSL), which makes configuring new projects an easy task.
 
-**Link do plug-in:** [job-dsl-plugin](https://github.com/jenkinsci/job-dsl-plugin)
+**Link plug-in:** [job-dsl-plugin](https://github.com/jenkinsci/job-dsl-plugin)
 
 ***
+
 <br />
 
-**Plugin de desempenho**
+**Performance plugin**
 
-Esta é uma ferramenta muito legal para os desenvolvedores brincarem. Ele permite que os desenvolvedores capturem relatórios de uma ampla gama de ferramentas de teste que incluem JUnit, JMeter, Twitter's Lago e Taurus. Você pode ver as informações sobre o desempenho do seu projeto no Jenkins por meio de tabelas e gráficos. Este é um ótimo exemplo de um dos principais plugins de gráfico do Jenkins.
+This is a really cool tool for developers to play with. It allows developers to capture reports from a wide range of testing tools that include JUnit, JMeter, Twitter's Lago and Taurus. You can view information about your project's performance on Jenkins using tables and graphs. This is a great example of one of Jenkins' main graphics plugins.
 
-**Link do plug-in:** [performance](https://plugins.jenkins.io/performance/)
+**Link plug-in:** [performance](https://plugins.jenkins.io/performance/)
 
 ***
+
 <br />
 
 **Build Monitor View**
 
-Será possível acompanhar os builds dos jobs que você criar.
+You will be able to track the builds of the jobs you create.
 
-**Link do plug-in:** [build-monitor-plugin](https://plugins.jenkins.io/build-monitor-plugin/)
+**Link plug-in:** [build-monitor-plugin](https://plugins.jenkins.io/build-monitor-plugin/)
 
 ***
+
 <br />
 
 **Periodic Backup**
 
-Vai ajudar você a manter as configurações de todo o seu jenkins (configurações gerais, de jobs, plugins).
+It will help you to maintain the settings of all your jenkins (general settings, jobs, plugins).
 
-**Link do plug-in:** [periodicbackup](https://plugins.jenkins.io/periodicbackup/)
+**Link plug-in:** [periodicbackup](https://plugins.jenkins.io/periodicbackup/)
 
 ***
+
 <br />
 
 **Cucumber Living Documentation**
 
-Para você que escreve os testes com Cucumber, um plugin bacana é o Living Documentation. Quando configurado no job, este plugin gera uma documentação completa em PDF e HTML baseado nas suas User Stories. Esta documentação inclui quais funcionalidades, cenários e steps passaram e quais falharam, além do tempo que a automação levou para testar cada step. Esta documentação é gerada em tempo real, ou seja, logo após a execução do job de testes automatizados, a documentação é atualizada com o resultado dos testes e fica disponível em uma URL no Jenkins. Seu time, stackholders, PO podem utilizar este documento como especificação do sistema.
+For you who write the tests with Cucumber, a nice plugin is Living Documentation. When configured in the job, this plugin generates complete PDF and HTML documentation based on your User Stories. This documentation includes which features, scenarios and steps have passed and which have failed, in addition to the time it took the automation to test each step. This documentation is generated in real time, that is, right after the execution of the automated test job, the documentation is updated with the results of the tests and is available at a URL in Jenkins. Your team, stackholders, PO can use this document as a system specification.
 
-**Link do plug-in:** [cucumber-living-documentation](https://plugins.jenkins.io/cucumber-living-documentation/)
+**Link plug-in:** [cucumber-living-documentation](https://plugins.jenkins.io/cucumber-living-documentation/)
 
-**Tutorial:** [testes-automatizados-no-jenkins-recursos-plugins-e-dicas-para-aumentar-a-produtividade](https://medium.com/cwi-software/testes-automatizados-no-jenkins-recursos-plugins-e-dicas-para-aumentar-a-produtividade-1685ffa1e9db)
+**Tutorial:** [automated-tests-at-jenkins-resources-plugins-and-tips-to-increase-productivity](https://medium.com/cwi-software/testes-automatizados-no-jenkins-recursos-plugins-e-dicas-para-aumentar-a-produtividade-1685ffa1e9db)
 
 ***
+
 <br />
 
 **Cucumber Reports**
 
-Este plugin apresenta de forma bem completa os resultados dos testes do Cucumber em um report HTML acessível pelo próprio Jenkins. As informações estão agrupadas por abas: “Feature”, “Tags”, “Steps”, “Trends” e “Failures”.
+This plugin presents the results of Cucumber tests in a very complete way in an HTML report accessible by Jenkins himself. The information is grouped by tabs: "Feature", "Tags", "Steps", "Trends" and "Failures".
 
-**Link do plug-in:** [cucumber-reports](https://plugins.jenkins.io/cucumber-reports/)
+**Link plug-in:** [cucumber-reports](https://plugins.jenkins.io/cucumber-reports/)
 
-**Tutorial:** [testes-automatizados-no-jenkins-recursos-plugins-e-dicas-para-aumentar-a-produtividade](https://medium.com/cwi-software/testes-automatizados-no-jenkins-recursos-plugins-e-dicas-para-aumentar-a-produtividade-1685ffa1e9db)
+**Tutorial:** [automated-tests-at-jenkins-resources-plugins-and-tips-to-increase-productivity](https://medium.com/cwi-software/testes-automatizados-no-jenkins-recursos-plugins-e-dicas-para-aumentar-a-produtividade-1685ffa1e9db)
 
 ***
+
 <br />
 
 **Jenkins API**
 
-A solução foi coletar estas informações através da API Rest do Jenkins. Através da API, podemos coletar informações sobre qualquer job, build, resultado de testes, artefatos, duração, etc, permitindo filtrar as informações que mais nos interessam. Os formatos disponíveis são json, xml e um formato específico em python.
+The solution was to collect this information through the Jenkins Rest API. Through the API, we can collect information about any job, build, test results, artifacts, duration, etc., allowing us to filter the information that most interests us. The available formats are json, xml and a specific format in python.
 
-**Link do plug-in:** [java-client-api](https://github.com/jenkinsci/java-client-api)
+**Link plug-in:** [java-client-api](https://github.com/jenkinsci/java-client-api)
 
 ***
+
 <br />
 
-**Plug-in de parâmetro do Git**
+**Git parameter plug-in**
 
-Quando você passa a maior parte do dia construindo pipelines e automatizando tarefas chatas, você quer que as pessoas realmente os usem. Para conseguir isso, você deve torná-lo fácil de usar. O plugin Git Parameter permite que você tenha branches , tags ou revisões do Git como um parâmetro para iniciar um trabalho ou pipeline. Isso é realmente útil se, por exemplo, você deseja configurar um pipeline de entrega contínua onde o desenvolvedor pode escolher de qual tag Git implementar.
+When you spend most of the day building pipelines and automating boring tasks, you want people to actually use them. To achieve this, you must make it easy to use. The Git Parameter plugin allows you to have Git branches, tags or revisions as a parameter to start a job or pipeline. This is really useful if, for example, you want to set up a continuous delivery pipeline where the developer can choose which Git tag to implement.
 
-**Link do plug-in:** [git-parameter](https://plugins.jenkins.io/git-parameter/)
+**Link plug-in:** [git-parameter](https://plugins.jenkins.io/git-parameter/)
 
 ***
+
 <br />
 
 **Plugin GitLab**
 
-Em minha empresa, usamos uma instância hospedada do GitLab como nossa ferramenta de gerenciamento de código-fonte. E embora eu ame a abordagem do GitLab para CI ( leia ), não seguimos esse caminho. Portanto, usamos Jenkins em vez disso e o conectamos ao GitLab. No final, os desenvolvedores têm a mesma experiência. O plug-in GitLab permite chamar pipelines do GitLab, usando WebHooks, e publicar os resultados da compilação de volta no GitLab. Isso permite que você obtenha feedback rapidamente de seus pipelines de CI.
+The GitLab plug-in allows you to call GitLab pipelines, using WebHooks, and publish the compilation results back to GitLab. This allows you to get feedback quickly from your CI pipelines.
 
-**Link do plug-in:** [gitlab-plugin](https://github.com/jenkinsci/gitlab-plugin)
+**Link plug-in:** [gitlab-plugin](https://github.com/jenkinsci/gitlab-plugin)
 
 ***
+
 <br />
 
-**Plug-in de e-mail estendido**
+**Extended email plug-in**
 
-Quando algo dá errado, você precisa que seus usuários resolvam o problema o mais rápido possível, caso contrário, seu CI / CD pode ser comprometido. O plugin Extended Email estende as notificações de email do Jenkins, dando controle sobre quase todos os aspectos. Você pode personalizar os gatilhos de notificações , conteúdo e destinatários . Dê uma olhada nessas [receitas](https://wiki.jenkins.io/display/JENKINS/Email-ext+Recipes) para ter suas próprias idéias. Dica : certifique-se de que cada notificação enviada seja absolutamente necessária, não envie spam para seus usuários. Acredite em mim, quanto menos notificações você enviar, mais os usuários as lerão e realmente reagirão a elas. Use plug-ins de IM (como o plug-in do Slack ou o plug-in do Skype) para dispersar suas notificações.
+The Extended Email plugin extends Jenkins email notifications, giving you control over almost every aspect. You can customize the notification, content and recipient triggers. Take a look at these [recipes](https://wiki.jenkins.io/display/JENKINS/Email-ext+Recipes) to get your own ideas. Tip: make sure that each notification sent is absolutely necessary, do not send spam to your users. Believe me, the less notifications you send, the more users will read them and actually react to them. Use IM plug-ins (like the Slack plug-in or the Skype plug-in) to disperse your notifications.
 
-**Link do plug-in:** [email-ext](https://plugins.jenkins.io/email-ext/)
+**Link plug-in:** [email-ext](https://plugins.jenkins.io/email-ext/)
 
 ***
+
 <br />
 
 **Multibranch Pipeline**
 
-Isso irá acionar automaticamente a execução do trabalho para cada branch, você tem para o seu repositório de projeto. Isso resolve o problema de criar uma nova construção para cada novo branch que criamos instantaneamente.
+This will automatically trigger the execution of the work for each branch, you have for your project repository. This solves the problem of creating a new build for each new branch that we create instantly.
 
-**Link do plug-in:** [Jenkins_Pipeline_Demo](https://github.com/raghwendra-sonu/Jenkins_Pipeline_Demo)
+**Link plug-in:** [Jenkins_Pipeline_Demo](https://github.com/raghwendra-sonu/Jenkins_Pipeline_Demo)
 
 ***
+
 <br />
 
 **Poll Mailbox Trigger**
 
-Um plugin do Jenkins, para pesquisar uma caixa de entrada de e-mail e acionar jobs com base em novos e-mails.
+A Jenkins plugin, to search for an email inbox and trigger jobs based on new emails.
 
-**Link do plug-in:** [poll-mailbox-trigger-plugin](https://github.com/jenkinsci/poll-mailbox-trigger-plugin)
-
-***
-<br />
-
-## Sobrecarga de plug-in
-
-Os plug-ins são ótimos, pois podem fornecer extensibilidade às funcionalidades centrais de um sistema. Mas, o que acontece quando você tem que usar um plugin para tudo, até mesmo tarefas básicas? Construir para um ambiente Docker, Kubernetes, extrair do GitHub, autenticação ... Todas as tarefas bastante comuns, para as quais você precisa instalar e manter um plugin .
-
-tarde da noite
-
-Foto de Nick Fewings no Unsplash
-Jenkins tem mais de 1500 plug-ins disponíveis hoje. Como você decide qual usar? A maioria deles são escritos por terceiros, o que significa que podem perder o suporte sem qualquer aviso.
-
-Além disso, vale a pena mencionar a cadeia de dependências. Muitos serviços mudam o tempo todo, tornando as dependências de plug-ins muito problemáticas e uma das causas mais comuns de pipelines quebrados. Isso realmente não fornece disponibilidade e estabilidade.
+**Link plug-in:** [poll-mailbox-trigger-plugin](https://github.com/jenkinsci/poll-mailbox-trigger-plugin)
 
 ***
+
 <br />
 
-## References
+## Plug-in overload
 
-- [MAIN] []()
-- [PLUGIN] []()
-- [HELP] []()
-- [APPLY] []()
-- [STUDY] []()
-- [TEST] []()
-- [IMPLEMENT] []()
+Plug-ins are great, as they can provide extensibility to the core functionality of a system. But, what happens when you have to use a plugin for everything, even basic tasks? Build for a Docker environment, Kubernetes, extract from GitHub, authentication ... All very common tasks, for which you need to install and maintain a plugin.
 
+Jenkins has more than 1500 plug-ins available today. How do you decide which one to use? Most of them are written by third parties, which means that they can lose support without any notice.
 
+In addition, it is worth mentioning the chain of dependencies. Many services change all the time, making dependencies on plug-ins very problematic and one of the most common causes of broken pipelines. This does not really provide availability and stability.
+
+***
+
+<br />
 
 ## Links Pesquisados
 
  - [How to send Email at every build with Jenkins](https://nozaki.me/roller/kyle/entry/articles-jenkins-email)
- - [Jenkins: O mínimo que você precisa saber](https://www.youtube.com/watch?v=8OfhS5f7jIY)
+ - [Jenkins: The least you need to know](https://www.youtube.com/watch?v=8OfhS5f7jIY)
  - [Top Jenkins plugins to take your CI/CD pipeline to the next level.](https://medium.com/devops-dudes/top-jenkins-plugins-to-take-your-ci-cd-pipeline-to-the-next-level-2482e479b2c6)
  - [5 Jenkins Plugins That You Should Use](https://medium.com/better-programming/5-jenkins-plugins-you-should-use-867e39fbf532)
  - [The most useful Jenkins plugins for DevOps in 2020](https://medium.com/@anupam.ncsu/the-most-useful-jenkins-plugins-for-devops-in-2020-db46d19ca995)
- - [Jenkins: de zero para implantar](https://medium.com/@allyxcristiano/jenkins-from-zero-to-deploy-e54a627f055a)
- - [Testes automatizados no Jenkins: recursos, plugins e dicas para aumentar a produtividade](https://medium.com/cwi-software/testes-automatizados-no-jenkins-recursos-plugins-e-dicas-para-aumentar-a-produtividade-1685ffa1e9db)
+ - [Jenkins: from zero to deploy](https://medium.com/@allyxcristiano/jenkins-from-zero-to-deploy-e54a627f055a)
+ - [Automated testing at Jenkins: resources, plugins and tips to increase productivity](https://medium.com/cwi-software/testes-automatizados-no-jenkins-recursos-plugins-e-dicas-para-aumentar-a-produtividade-1685ffa1e9db)
  - [8 Jenkins plugins I can't live without](https://dev.to/jcoelho/8-jenkins-plugins-i-cant-live-without-3bin)
  - [Jenkins Multibranch Pipeline](https://dev.to/raghwendrasonu/jenkins-multibranch-pipeline-19lh)
  - [Trigger a Job with Email in Jenkins](https://dev.to/raghwendrasonu/trigger-a-job-with-email-in-jenkins-1554)
- - [Jenkins: O mínimo que você precisa saber](https://www.youtube.com/watch?v=8OfhS5f7jIY)
+ - [Jenkins: The least you need to know](https://www.youtube.com/watch?v=8OfhS5f7jIY)
 
 ***
+
 <br />
 
 ## Links Salvos
@@ -273,6 +282,5 @@ Além disso, vale a pena mencionar a cadeia de dependências. Muitos serviços m
  - [Jenkins is getting old](https://dev.to/microtica/jenkins-is-getting-old-1mf6)
  - [Complete Jenkins Pipeline Tutorial for Beginners [FREE]](https://dev.to/techworld_with_nana/complete-jenkins-pipeline-tutorial-for-beginners-free-3fm9)
  - [Automate your API tests with Jenkins, Postman and Newman](https://dev.to/carleskapy/automate-your-api-tests-with-jenkins-postman-and-newman-3079)
-
 
 ***

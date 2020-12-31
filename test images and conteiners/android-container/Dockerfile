@@ -1,9 +1,9 @@
 FROM ubuntu:20.04
 
-# Impede o Python grave arquivos pyc no disco(equivale à python -B option)
+# Prevent Python from writing pyc files to disk (equivalent to python -B option)
 ENV PYTHONDONWRITEBYCODE 1
 
-# Impede o Python armazene em buffer stdout e stderr(equivale à python -u option)
+# Prevent Python from buffering stdout and stderr (equivalent to python -u option)
 ENV PYTHONUNBUFFERED 1
 
 ENV DEBIAN_FRONTEND=noninteractive

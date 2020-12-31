@@ -112,7 +112,7 @@ Return:
 ```
 
 ```
-Dowload nginx image:
+Download nginx image:
     docker pull nginx
 ```
 
@@ -165,6 +165,6 @@ This part of the course needs to be better tested, as it was done on virtual mac
 
 # References
 
-- [Como criar um certificado autoassinado SSL com OpenSSL](https://imasters.com.br/devsecops/como-criar-um-certificado-autoassinado-ssl-com-openssl)
+- [How to create a self-signed SSL certificate with OpenSSL](https://imasters.com.br/devsecops/como-criar-um-certificado-autoassinado-ssl-com-openssl)
 
 ***

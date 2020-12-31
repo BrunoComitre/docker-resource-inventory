@@ -1,29 +1,30 @@
-# Busca Sonic
+# SONIC SEARCH
 
-Documentação sobre implementação de busca dinâmica usando Sonic
+Documentation on implementing dynamic search using Sonic
 
 ***
+
 <br />
 
 ## Quickstart
 
-### Localmente:
+### Locally:
 
-Instale a imagem do sonic:
+Install the sonic image:
 ``` $ docker pull valeriansaliou/sonic:v1.3.0 ```
 
-Peque o endereço do arquivo:
-``` $ pwd ``` 
+Enter the file address:
+``` $ pwd ```
 
-Altere o caminho e rode o conteiner:
-``` $ docker run -p 1491:1491 -v "pwd"/sonic/config.cfg:/etc/sonic.cfg -v "pwd"/sonic/store/:/var/lib/sonic/store/ valeriansaliou/sonic:v1.3.0
- ```
-Dentro da raiz do projeto adicione uma paasta chamada sonic e dentro dela crie o arquivo: config.cfg
+Change the path and rotate the container:
+``` $ docker run -p 1491:1491 -v "pwd"/sonic/config.cfg:/etc/sonic.cfg -v "pwd"/sonic/store/:/var/lib/sonic/store/ valeriansaliou/sonic:v1.3.0 ```
 
-Obs: O arquivo encontrado no projeto tem uma configuração padrão. Não esquecer de quando rodar em produção alterar a senha padrão.
+Inside the project root add a folder called sonic and inside it create the file: config.cfg
 
-O vídeo de exemplo é: [Buscando em 1 milhão de dados em 0.8ms com Rust | Code/Drops #66](https://www.youtube.com/watch?v=rNCGwggC1RI&t=8s)
+Note: The file found in the project has a standard configuration. Don't forget to change the default password when running in production.
 
-Link do Projeto: [Sonic](https://github.com/valeriansaliou/sonic)
+The example video is: [Searching for 1 million data in 0.8ms with Rust | Code/Drops #66](https://www.youtube.com/watch?v=rNCGwggC1RI&t=8s)
+
+Project Link: [Sonic] (https://github.com/valeriansaliou/sonic)
 
 ***

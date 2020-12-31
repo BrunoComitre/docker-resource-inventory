@@ -123,8 +123,6 @@ venv.bak/
 *.egg-info*
 *.pkl
 app/.env
-.idea
-vendor
 
 # Spyder project settings
 .spyderproject
