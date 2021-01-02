@@ -320,9 +320,7 @@ Below are lists with more content that increase the capacity of this list to x10
 Space to add computing notes:
 
 ```
-- Many terminal and dockerfile commands are specified in the folder: Course Docker from Zero to Mastery - Demystified Containerization.
-
-- Commands and shortcuts available in the COMMANDS.md file.
+- Many terminal and dockerfile commands are specified in the COMMANDS.md file.
 ```
 
 [GO TO INDEX](#index)
