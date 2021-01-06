@@ -39,6 +39,7 @@
 repository updates:
 
 - [ ] Open sites and verify that they are active and that they are part of the repository.
+- [ ] Add [EN-US] or [PT-BR] to the links
 - [ ] Get Docker Certification (DCA)
 - [ ] Learn how to use volumes to share and persist log data (Mount a volume in the container).
 - [ ] Learn how to test on a docker image before creating the dockerfile (Best Practice)
