@@ -324,6 +324,9 @@ Space to add Docker notes:
 
 ```
 - Many terminal and dockerfile commands are specified in the COMMANDS.md file.
+
+- docker rmi $(docker images -f  dangling=true -q)  --force
+
 ```
 
 [GO TO INDEX](#index)
