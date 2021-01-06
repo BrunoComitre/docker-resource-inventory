@@ -1,4 +1,4 @@
-# ARQUIVOS OK
+# ANDROID CONTAINER
 
 ***
 <br/>
@@ -21,8 +21,8 @@ netstat -tulpn | grep LISTEN
 ***
 <br/>
 
-vnc://0.0.0.0:5901 ou 5900
-senha: android
+vnc://0.0.0.0:5901 or 5900
+password: android
 
 ***
 <br/>

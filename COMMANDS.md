@@ -1,12 +1,10 @@
-# Course Docker from Zero to Mastery - Demystified Containerization
+# Docker Commands
 
-Link Udemy: [Docker from Zero to Mastery - Demystified Containerization (PT-BR)](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/)
+<br />
 
-***
+List of docker commands to facilitate development and research.
 
-</br>
-
-# Commands
+<br />
 
 ## Notes
 
@@ -95,7 +93,7 @@ Example:
 The **ADD** statement will copy the files from **<'src'>** and add them to the container file system in the path **<'dest>'**.
   - **ADD** allows **<'src'>** to be a URL;
   - If the **<'src'>** parameter of **ADD** is a file in a recognized compression format, it will be unzipped in the container file system.
-  
+
 #### COPY <'src'> <'dest'>
 The **COPY** statement will copy the **<'src'>** files and the container file system into the path **<'dest>'**.
   - If you do not need to add resources from URLs and/or compressed, always use the ** COPY ** instruction.
@@ -841,42 +839,6 @@ Where:
     - ps : Shows the list of running docker-compose.yml containers.
 ```
 
-***  
-
 </br>
-
-# References
-
-- [Docker](https://www.docker.com/)
-- [Docker Hub](https://hub.docker.com/)
-- [Docker Documentation](https://docs.docker.com/)
-- [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
-- [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)
-- [dockerd](https://docs.docker.com/engine/reference/commandline/dockerd/)
-- [Configure and troubleshoot the Docker daemon](https://docs.docker.com/config/daemon/)
-- [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)
-- [A minimal Ubuntu base image modified for Docker-friendliness](https://github.com/phusion/baseimage-docker)
-- [Docker Tag](https://docs.docker.com/engine/reference/commandline/tag/)
-- [Announcing Docker Enterprise Edition](https://www.docker.com/blog/docker-enterprise-edition/)
-- [Docker Enterprise](https://www.mirantis.com/software/docker/docker-enterprise/)
-- [File system sharing (osxfs)](https://docs.docker.com/docker-for-mac/osxfs/#namespaces) 
-- [Docker Community](https://www.docker.com/docker-community)
-- [Docker GitHub](https://github.com/docker)
-- [Docker RUN vs CMD vs ENTRYPOINT](https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/)
-- [Networking features in Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/networking/)
-- [Docker Images](https://docs.docker.com/engine/reference/commandline/images/)
-- [Configure and troubleshoot the Docker daemon](https://docs.docker.com/config/daemon/)
-- [Use the Docker command line](https://docs.docker.com/engine/reference/commandline/cli/)
-- [Use bridge networks](https://docs.docker.com/network/bridge/)
-- [Overview Network](https://docs.docker.com/network/)
-- [Container networking](https://docs.docker.com/config/containers/container-networking/)
-- [leandrocgsi/DockerFromZeroToMastery](https://github.com/leandrocgsi/DockerFromZeroToMastery)
-- [Install Docker Compose](https://docs.docker.com/compose/install/)
-- [Docker is installed but Docker Compose is not ? why?](https://stackoverflow.com/questions/36685980/docker-is-installed-but-docker-compose-is-not-why)
-- [Travis CI](https://travis-ci.org/)
-- [Code Project](https://www.codeproject.com/)
-- [DZone](https://dzone.com/)
-- [InfoQ](https://www.infoq.com/br/)
-- [Stack Overflow](https://pt.stackoverflow.com/)
 
 ***

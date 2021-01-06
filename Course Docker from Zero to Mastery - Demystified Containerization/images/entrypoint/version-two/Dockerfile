@@ -5,4 +5,4 @@ RUN apt-get update && apt-get install -y tzdata  \
 
 RUN apt-get update && apt-get install -y iputils-ping apache2
 
-ENTRYPOINT ["apache2ctl"] 
+ENTRYPOINT ["apache2ctl"]
