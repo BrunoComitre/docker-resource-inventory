@@ -57,6 +57,7 @@ Below is a list of favorite sites that have a variety of topics related to Docke
 - [Docker Hub](https://hub.docker.com/) [EN-US]
 - [Docker Documentation](https://docs.docker.com/) [EN-US]
 - [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) [EN-US]
+- [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/)
 - [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/) [EN-US]
 - [dockerd](https://docs.docker.com/engine/reference/commandline/dockerd/) [EN-US]
 - [Configure and troubleshoot the Docker daemon](https://docs.docker.com/config/daemon/) [EN-US]
